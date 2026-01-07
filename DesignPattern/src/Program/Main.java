@@ -12,13 +12,13 @@ import java.util.List;
 import FactoryPattern.AbstractFactoryPattern.NotificationAbstractFactory;
 import FactoryPattern.AbstractFactoryPattern.aws.AwsNotificationFactory;
 import Singleton.Logger;
-import StrategyPattern.WithStrategy.Ecommerce.FestivalDiscountStrategy;
-import StrategyPattern.WithStrategy.Ecommerce.Orders;
-import StrategyPattern.WithStrategy.Ecommerce.PremiumCustomerDiscountStrategy;
-import StrategyPattern.WithoutStrategy.Ecommerce.Customer;
-import StrategyPattern.WithoutStrategy.Ecommerce.CustomerType;
-import StrategyPattern.WithoutStrategy.Ecommerce.Order;
-import StrategyPattern.WithoutStrategy.Ecommerce.Product;
+import StrategyPattern.WithStrategy.FestivalDiscountStrategy;
+import StrategyPattern.WithStrategy.Orders;
+import StrategyPattern.WithStrategy.PremiumCustomerDiscountStrategy;
+import StrategyPattern.WithoutStrategy.Customer;
+import StrategyPattern.WithoutStrategy.CustomerType;
+import StrategyPattern.WithoutStrategy.Order;
+import StrategyPattern.WithoutStrategy.Product;
 
 public class Main
 {

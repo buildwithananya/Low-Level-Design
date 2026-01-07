@@ -1,8 +1,9 @@
-package StrategyPattern.WithStrategy.Ecommerce;
+package StrategyPattern.WithStrategy;
 
 import java.util.List;
-import StrategyPattern.WithoutStrategy.Ecommerce.Customer;
-import StrategyPattern.WithoutStrategy.Ecommerce.Product;
+
+import StrategyPattern.WithoutStrategy.Customer;
+import StrategyPattern.WithoutStrategy.Product;
 
 public class FestivalDiscountStrategy implements DiscountStrategy 
 {

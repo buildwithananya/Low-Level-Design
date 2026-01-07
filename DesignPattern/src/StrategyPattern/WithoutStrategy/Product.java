@@ -1,4 +1,4 @@
-package StrategyPattern.WithoutStrategy.Ecommerce;
+package StrategyPattern.WithoutStrategy;
 
 public class Product 
 {
