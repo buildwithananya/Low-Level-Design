@@ -5,6 +5,9 @@ import FactoryPattern.WithoutFactoryPattern.EmailNotification;
 import FactoryPattern.WithoutFactoryPattern.Notification;
 import FactoryPattern.WithoutFactoryPattern.PushNotification;
 import FactoryPattern.WithoutFactoryPattern.SMSNotification;
+import ObserverDesignPattern.Observable.EcommerceProductObservableImp;
+import ObserverDesignPattern.Observer.CustomerObserver;
+import ObserverDesignPattern.Observer.EcommerceCustomerObserverImp;
 
 import java.util.Arrays;
 import java.util.List;
@@ -103,5 +106,25 @@ public class Main
         // Premium customer discount
         orders.setDiscountStrategy(new PremiumCustomerDiscountStrategy());
         System.out.println("Premium Total: " + orders.calculateOrder(customer));
+        
+     // ================= Observer Pattern =================
+        
+        EcommerceProductObservableImp iphone = new EcommerceProductObservableImp(
+                "iPhone 15", 1200.0, false
+        );
+
+        CustomerObserver alice = new EcommerceCustomerObserverImp("Alice", 1000);
+        CustomerObserver bob = new EcommerceCustomerObserverImp("Bob", 1100);
+
+        iphone.registerCustomer(alice);
+        iphone.registerCustomer(bob);
+
+        // Product comes back in stock
+        System.out.println("---- Product back in stock ----");
+        iphone.setInStock(true);
+
+        // Price drop
+        System.out.println("---- Price drop ----");
+        iphone.setPrice(999.99);
     }
 }
