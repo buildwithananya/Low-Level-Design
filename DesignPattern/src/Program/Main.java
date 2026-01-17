@@ -12,9 +12,14 @@ import ObserverDesignPattern.Observer.EcommerceCustomerObserverImp;
 import java.util.Arrays;
 import java.util.List;
 
+import ChainOfResponsibilityDesignPattern.Director;
+import ChainOfResponsibilityDesignPattern.DiscountHandler;
+import ChainOfResponsibilityDesignPattern.Manager;
+import ChainOfResponsibilityDesignPattern.SalesExecutive;
 import FactoryPattern.AbstractFactoryPattern.NotificationAbstractFactory;
 import FactoryPattern.AbstractFactoryPattern.aws.AwsNotificationFactory;
 import Singleton.Logger;
+import StateDesignPattern.OrderContext;
 import StrategyPattern.WithStrategy.FestivalDiscountStrategy;
 import StrategyPattern.WithStrategy.Orders;
 import StrategyPattern.WithStrategy.PremiumCustomerDiscountStrategy;
@@ -107,7 +112,7 @@ public class Main
         orders.setDiscountStrategy(new PremiumCustomerDiscountStrategy());
         System.out.println("Premium Total: " + orders.calculateOrder(customer));
         
-     // ================= Observer Pattern =================
+       // ================= Observer Pattern =================
         
         EcommerceProductObservableImp iphone = new EcommerceProductObservableImp(
                 "iPhone 15", 1200.0, false
@@ -126,5 +131,24 @@ public class Main
         // Price drop
         System.out.println("---- Price drop ----");
         iphone.setPrice(999.99);
+        
+        // ================= Chain of Responsibility Pattern =================
+        DiscountHandler sales=new SalesExecutive();
+        DiscountHandler manager=new Manager();
+        DiscountHandler director=new Director();
+        
+        sales.setNext(manager);
+        manager.setNext(director);
+        
+        double[] discounts= {2,6,18,25};
+        for(double d: discounts)
+        	sales.handleDiscount(d);
+        
+        // ================= State Pattern =================
+        OrderContext context=new OrderContext();
+        context.ship();
+        context.deliver();
+        context.cancel();
+        
     }
 }
