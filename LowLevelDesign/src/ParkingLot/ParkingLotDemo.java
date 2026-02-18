@@ -61,7 +61,7 @@ public class ParkingLotDemo
         	Optional<Double> feeOpt =parkinglot.unparkVehicle(car2.getLicenseNumber());
         	feeOpt.ifPresent(fee -> System.out.printf("Car C-456 unparked. Fee: $%.2f\n", fee));
         }
-        System.out.println("\n--- Availability after one car leaves ---");
+        System.out.println("\n---- Availability after one car leaves ----");
         floor1.displayAvailability();
         floor2.displayAvailability();
 	}
