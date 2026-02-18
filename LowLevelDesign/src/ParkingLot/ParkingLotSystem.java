@@ -5,9 +5,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
-import ParkingLot.Entities.ParkingFloor;
-import ParkingLot.Entities.ParkingSpot;
-import ParkingLot.Entities.ParkingTicket;
+
+import ParkingLot.entities.ParkingFloor;
+import ParkingLot.entities.ParkingSpot;
+import ParkingLot.entities.ParkingTicket;
 import ParkingLot.strategy.fee.FeeStrategy;
 import ParkingLot.strategy.fee.FlatRateFeeStrategy;
 import ParkingLot.strategy.parking.BestFitStrategy;

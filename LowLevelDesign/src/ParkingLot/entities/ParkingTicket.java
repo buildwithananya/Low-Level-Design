@@ -1,4 +1,4 @@
-package ParkingLot.Entities;
+package ParkingLot.entities;
 
 import java.util.Date;
 import java.util.UUID;
