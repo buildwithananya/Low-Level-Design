@@ -1,4 +1,4 @@
-package ParkingLot.Entities;
+package ParkingLot.entities;
 
 import ParkingLot.vehicle.Vehicle;
 import ParkingLot.vehicle.VehicleSize;

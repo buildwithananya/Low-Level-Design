@@ -2,7 +2,7 @@ package ParkingLot.strategy.fee;
 
 import java.util.Map;
 
-import ParkingLot.Entities.ParkingTicket;
+import ParkingLot.entities.ParkingTicket;
 import ParkingLot.vehicle.VehicleSize;
 
 public class VehicleBasedFeeStrategy implements FeeStrategy

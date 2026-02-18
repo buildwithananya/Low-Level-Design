@@ -2,9 +2,9 @@ package ParkingLot;
 
 import java.util.Optional;
 
-import ParkingLot.Entities.ParkingFloor;
-import ParkingLot.Entities.ParkingSpot;
-import ParkingLot.Entities.ParkingTicket;
+import ParkingLot.entities.ParkingFloor;
+import ParkingLot.entities.ParkingSpot;
+import ParkingLot.entities.ParkingTicket;
 import ParkingLot.vehicle.Bike;
 import ParkingLot.vehicle.Car;
 import ParkingLot.vehicle.Truck;

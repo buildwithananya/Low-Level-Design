@@ -1,4 +1,4 @@
-package ParkingLot.Entities;
+package ParkingLot.entities;
 
 import java.util.Comparator;
 import java.util.Map;

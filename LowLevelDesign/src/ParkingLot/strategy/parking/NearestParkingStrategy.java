@@ -3,8 +3,8 @@ package ParkingLot.strategy.parking;
 import java.util.List;
 import java.util.Optional;
 
-import ParkingLot.Entities.ParkingFloor;
-import ParkingLot.Entities.ParkingSpot;
+import ParkingLot.entities.ParkingFloor;
+import ParkingLot.entities.ParkingSpot;
 import ParkingLot.vehicle.Vehicle;
 
 public class NearestParkingStrategy implements ParkingStrategy 

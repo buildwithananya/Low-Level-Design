@@ -1,6 +1,6 @@
 package ParkingLot.strategy.fee;
 
-import ParkingLot.Entities.ParkingTicket;
+import ParkingLot.entities.ParkingTicket;
 
 public interface FeeStrategy 
 {
