@@ -4,5 +4,5 @@
 /**
  * 
  */
-module LowLevelDesign {
+module designpattern {
 }
